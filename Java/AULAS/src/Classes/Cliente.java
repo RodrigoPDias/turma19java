@@ -9,6 +9,10 @@ public class Cliente {
 		//variaveis
 		//corpo
 		//metodos
+		public void linha() 
+		{
+			System.out.println("-------------------------------------------------------------------------------------------");
+		}
 		public int calculaIdade() 
 		{
 			return 2021- anoNascimento;

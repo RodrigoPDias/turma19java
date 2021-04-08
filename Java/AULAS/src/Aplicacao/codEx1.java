@@ -15,7 +15,7 @@ public class codEx1 {
 	objeto e apresente as informações deste objeto no console.
 	*/
 		//corpo
-		System.out.println("--------------------------------------------------------------------");
+		client1.linha();
 		System.out.println("Bem Vindo");
 		System.out.println("Vamos fazer seu cadastro");
 		System.out.println("Você é 1-Femino 2-Masculino 3-outre ");
@@ -26,14 +26,14 @@ public class codEx1 {
 		client1.anoNascimento=Teclado.nextInt();
 		System.out.println("Qual o seu CPF");
 		client1.cpf=Teclado.next();
-		System.out.println("--------------------------------------------------------------------");
+		client1.linha();
 		//fim
-		System.out.printf("\n%s %s",client1.tratamento(),client1.nome);
+		System.out.printf("%s %s",client1.tratamento(),client1.nome);
 		System.out.printf("\nCPF: %s ",client1.cpf);
-		System.out.printf("\nIdade: %d ",client1.calculaIdade());
-		System.out.println("--------------------------------------------------------------------");
-		System.out.println("\nCadastro pronto");
-		System.out.println("--------------------------------------------------------------------");
+		System.out.printf("\nIdade: %d \n",client1.calculaIdade());
+		client1.linha();
+		System.out.println("\n				Cadastro pronto\n");
+		client1.linha();
 		
 		
 	}

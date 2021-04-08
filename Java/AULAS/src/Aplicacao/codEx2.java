@@ -13,17 +13,18 @@ public class codEx2 {
 		Locale.setDefault(Locale.US);
 		Scanner Teclado= new Scanner(System.in);
 		Airplane Ave1 = new Airplane();
-	/*2) Crie uma classe avião e apresente os atributos e métodos referentes
+		/*
+	 * 2) Crie uma classe avião e apresente os atributos e métodos referentes
 	 *esta classe, em seguida crie um objeto avião, defina as instancias deste
 	 *objeto e apresente as informações deste objeto no console.
-	 */
+	 	*/
 		Ave1.tipoAviao = "Lockheed Martin SR-71";
 		Ave1.numeroserie = "257962354515";
 		Ave1.velocidadeMax=  3700;
 		Ave1.velocidadeAtual= 000;
 		System.out.print("Aviao ligando...");
 		Ave1.aceleracao();
-		System.out.printf("\n %s ",Ave1.tipoAviao);
+		System.out.printf("\n%s ",Ave1.tipoAviao);
 		System.out.printf("\nNumero de serie: %s \n",Ave1.numeroserie);
 		Ave1.informacao();
 		Ave1.liga();
