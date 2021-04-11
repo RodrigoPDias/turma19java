@@ -4,15 +4,16 @@ public class Produto {
 	private String descricao;
 	private String codigo;
 	private double valorUnitario;
-	private double qtdeEstoque;
-	//constructor //source
-	public Produto(String descricao, String codigo, double valorUnitario) {
+	private int qtdeEstoque = 0;
+	
+	public Produto(String descricao, String codigo, double valorUnitario)
+	{
 		super();
 		this.descricao = descricao;
 		this.codigo = codigo;
 		this.valorUnitario = valorUnitario;
-		
 	}
+	
 	public String getDescricao() {
 		return descricao;
 	}
@@ -23,36 +24,30 @@ public class Produto {
 		return codigo;
 	}
 	
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
-	}
 	public double getValorUnitario() {
 		return valorUnitario;
 	}
-	
 	public void setValorUnitario(double valorUnitario) {
 		this.valorUnitario = valorUnitario;
 	}
-	public double getQtdeEstoque() {
+	public int getQtdeEstoque() {
 		return qtdeEstoque;
 	}
-	/*
-	public void setQtdeEstoque(int qtdeEstoque) {
-		this.qtdeEstoque = qtdeEstoque;
-	}*/
 	
-	//metodos
-	public void incluirEstoque(double produtoNovo) 
+	public void incluirEstoque(int qtdeEstoque)
 	{
-		this.qtdeEstoque=produtoNovo+qtdeEstoque;
+		this.qtdeEstoque = this.qtdeEstoque + qtdeEstoque;
 	}
-	public void retirarEstoque(double saidaProduto) 
+	
+	public void tirarEstoque(int qtdeEstoque)
 	{
-		if(this.qtdeEstoque>=saidaProduto) {
-		this.qtdeEstoque=saidaProduto-qtdeEstoque;
+		if(this.qtdeEstoque >= qtdeEstoque)
+		{
+			this.qtdeEstoque = this.qtdeEstoque - qtdeEstoque;
 		}
-		else {
-			System.out.println("Estoque indisponivel");
+		else
+		{
+			System.out.println("Estoque abaixo do pedido");
 		}
 	}
 	

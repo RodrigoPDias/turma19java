@@ -12,6 +12,7 @@ public class qAnimal {
 		Cavalo horse = new Cavalo("Spirit", "10", "hiiien [Beto Carreiro]");
 		Preguica sloth =new Preguica("Lazy", "5", "shiiiu estou dormindo");
 		//corpo
+		sloth.setSobeEmArvore("Sobe em Arvore");
 		System.out.println("Cachorro");
 		System.out.println(dog.getNome());
 		System.out.println("idade:"+dog.getIdade());
@@ -24,6 +25,6 @@ public class qAnimal {
 		System.out.println(sloth.getNome());
 		System.out.println("idade:"+sloth.getIdade());
 		System.out.println("Som "+sloth.getSom());
-		
+		System.out.println(sloth.getSobeEmArvore());
 	}
 }

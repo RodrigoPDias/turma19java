@@ -7,10 +7,11 @@ public class Preguica extends Animal{
 	}
 private String sobeEmArvore;
 public String getSobeEmArvore() {
+	
 	return sobeEmArvore;
-}/*
+}
 public void setSobeEmArvore(String sobeEmArvore) {
 	this.sobeEmArvore = sobeEmArvore;
-}*/
+}
 
 }
