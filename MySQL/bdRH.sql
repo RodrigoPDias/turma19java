@@ -19,3 +19,6 @@ insert into tb_funcionario(nome,cpf,salario,idade) values("Rita",1875468914,2.70
 -- buscar produto
 select * from tb_funcionario where salario>= 2.500;
 select * from tb_funcionario where salario< 2.500;
+
+
+update tb_funcionario set nome = "Pedro Henrique"  where id = 2;

@@ -36,6 +36,7 @@ insert into tb_produtos (nome,preco,marca_id) values ("camisa",700.50,3);
 select * from tb_produtos where preco<= 500;
 select * from tb_produtos where preco>= 500;
 
+update tb_produto set nome = "bota"  where id = 3;
 
 
 
